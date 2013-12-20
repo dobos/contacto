@@ -1,0 +1,132 @@
++  display name lehetõségek
++  person save debug
++  navigator befejezése
+-  névjegykártya lista
++  dokumentum mappa kitalálása
++  dokumentum kategóriák kitalálása
++  users
+   users editor
++  login
+   
+
+hibák:
+   entity-nél invalid version ex kezelése nem megy több ablaknál save
+++ attribute módosításkor a lista nem frissül
+++ különbözõ type-ú entity-k nevei is kellenek, document list stb
+++ display name rögtön save-nél nem íródik be
+   view flashing
+++ összes dokumentum node
+   validation
+   fonts
+
+++ save nem megy
+++ view resize
+++ settings
+   modify detect
+
+
++ dokumentumok fül
+   összes dokumentum
+   kategóriák
+	kategória értékek
+		dokumentumok kategória szerint
+   cégekenkén
+	cég lista
+		dokumentumok cégek szerint
+
+
+03.03
+-----
+
+   save gomb nem küld hibát
+++ frissítés gomb
+++ delete gomb
++  böngészõt kitalálni
+++ keresõt kitalálni
+   gyorskeresõ
+++ fülek minden view-nál jól
+   linknél edit fül
+++ link listánál filter
+++ tulajdonságok fül
+2007. 03. 15. 14:11:19
+
+03.15
+
+   link form
+
+03.16
+
+   e-mail és cím a listákban
+   mentés másként
+
+----------------------------------------------
+
+   stored proc: legenreálni az összes kötelezõ kategóriát
+   stored proc: kategória törlése
+   kategóriák: multiple=false érvényesítése
+   link editor, link button
+
+----------------------------------
+
+if (e.Data.GetDataPresent("FileGroupDescriptor",false) &&
+
+e.Data.GetDataPresent("FileContents",false)) {
+
+FileStream fs = null;
+
+MemoryStream ms = null;
+
+string filePath = "";
+
+try {
+
+ms = (MemoryStream) e.Data.GetData("FileGroupDescriptor",
+
+true);
+
+ms.Position = 76;
+
+string fileName = "";
+
+while(true) {
+
+int l = ms.ReadByte();
+
+if (l == 0) break;
+
+fileName += Convert.ToChar(l).ToString();
+
+}
+
+ms = (MemoryStream) e.Data.GetData("FileContents",true);
+
+byte[] b = new byte[ms.Length];
+
+ms.Position = 0;
+
+ms.Read(b,0,(int) ms.Length);
+
+filePath = Path.GetTempPath() + fileName;
+
+fs = new FileStream(filePath, FileMode.Create);
+
+fs.Write(b,0,(int)ms.Length);
+
+} catch(Exception ex) {
+
+MessageBox.Show("An error has occured while saving the " +
+
+"dragged attachment to temporary file '" + filePath +
+
+"'.", Constants.MessageBoxTitle, MessageBoxButtons.OK,
+
+MessageBoxIcon.Error);
+
+} finally {
+
+if (fs != null)
+
+fs.Close();
+
+}----------------------------------------------
+

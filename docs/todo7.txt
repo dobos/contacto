@@ -1,0 +1,60 @@
+contacto
+========
+
+++ mappa környékén sokminden
+   dokumentum template-ek
+++ dokumentum fájlnév átírása
+++ névjegynél beosztás visszaugrik
+++ kategóriák abc sorrendben és nem ID szerint
+
++  link/kategória hozzáadás még mindig fagy, ha nincsen szabad kategória
+
++  lista exportálása
+
+   ügyfélkód szám szerint sorbarakva - sql update
+
+++ listában is lehessen klikkelni az e-mail címeket
+
+++ adminisztrátor a cég alá a prod db-ben
+
+
+weboldal
+========
+
+   jelszóval védett dokumentum feltöltés
+
+
+
+
+------------------------------------------------
+
+ALTER PROC [dbo].[spCreateBlob]
+	@UserGUID uniqueidentifier,
+
+	@GUID uniqueidentifier,
+	@Filename nvarchar(250),
+	@Format nvarchar(5)
+AS
+
+	INSERT INTO Blobs
+		(GUID, Revision, CheckedOutBy, [Current], [Filename], Format, Data)
+	VALUES
+		(@GUID, -1, NULL, 1, @Filename, @Format, NULL)
+
+
+
+
+CREATE PROC [dbo].[spModifyBlob]
+	@UserGUID uniqueidentifier,
+
+	@GUID uniqueidentifier,
+	@Filename nvarchar(250),
+	@Format nvarchar(5)
+AS
+
+	UPDATE Blobs
+	SET [Filename] = @FileName,
+		Format = @Format
+	WHERE GUID = @GUID
+
+

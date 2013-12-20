@@ -1,0 +1,4 @@
+entity access nem upgrade-elõdik?
+temp cleanup?
+
+settingsbe sort order

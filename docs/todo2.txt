@@ -1,0 +1,17 @@
+kapcsolatok
+cég sorszáma (számlázó programból)
+munkaszám: (cég sorszáma)-2007-sorszám
+cégeknél dokumentumok munkaszámonként
+dokumentum: sorszám
+dokumentum: megrendelés, árajánlat kérés (ki, be), árajánlat (ki, be), árkalkulációk, rendelés visszaigazolás (be, ki)
+mellékletek
+e-mail listák generálása
+
+e-mailezés funkciók
+idõzített e-mail
+
+
+
+honlap:
+admin feltöltés
+szakcikkek

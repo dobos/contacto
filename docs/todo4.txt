@@ -1,0 +1,8 @@
+++ vista elmosott betûk
+   xp alatt függõleges szöveg a füleken nem látszik
+++ listview jegyezze meg a sorbarendezést
+   dátum és egyéb filterezés
+++ cég nem választható ki,
+++      nem frissít automatikusan
+++ web címnél http:// legyen automatikus
+++ web cím felkeresése, e-mail küldése

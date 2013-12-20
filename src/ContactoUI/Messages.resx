@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotCreateDate" xml:space="preserve">
+    <value>Nem hozható létre új dátum.</value>
+  </data>
+  <data name="CannotCreateLink" xml:space="preserve">
+    <value>Nem hozható létre új hivatkozás.</value>
+  </data>
+  <data name="CannotDelete" xml:space="preserve">
+    <value>Az elem nem törölhető.</value>
+  </data>
+  <data name="CannotModify" xml:space="preserve">
+    <value>Az elem nem módosítható.</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Lezárva</value>
+  </data>
+  <data name="ConfirmChangeExtension" xml:space="preserve">
+    <value>Valóban meg kívánja változtatni a fájl kiterjesztését?</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Valóban törölni szeretné a kijelölt elemeket?</value>
+  </data>
+  <data name="ConfirmDeleteEntity" xml:space="preserve">
+    <value>Valóban törölni szeretné a következő elemet: {0}?</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Törölve</value>
+  </data>
+  <data name="DuplicateBlobFilename" xml:space="preserve">
+    <value>Már létező fájlnév. Törölje a régit.</value>
+  </data>
+  <data name="ErrorCheckinBlob" xml:space="preserve">
+    <value>Hiba történt a fájl szerkesztésének befejezésekor. Elképzelhető, hogy a fájl még valamelyik programban meg van nyitva. A műveletet megszakíthatja, megpróbálhatja ismét, illetve figyelmen kívül hagyhatja a hibát, de ekkor a legutolsó változtatások elveszhetnek.</value>
+  </data>
+  <data name="ErrorCheckoutBlob" xml:space="preserve">
+    <value>Hiba történt a fájl megnyitásakor.</value>
+  </data>
+  <data name="ErrorClosingEntity" xml:space="preserve">
+    <value>Hiba történt az elem lezárásakor.</value>
+  </data>
+  <data name="ErrorCreatingAddress" xml:space="preserve">
+    <value>Hiba történt az új cím létrehozása közben.</value>
+  </data>
+  <data name="ErrorCreatingBlob" xml:space="preserve">
+    <value>Hiba történt a fájl létrehozása közben.</value>
+  </data>
+  <data name="ErrorCreatingCategory" xml:space="preserve">
+    <value>Hiba történt az új kategória létrehozásakor.</value>
+  </data>
+  <data name="ErrorCreatingCompany" xml:space="preserve">
+    <value>Hiba történt az új cég létrehozása közben.</value>
+  </data>
+  <data name="ErrorCreatingDate" xml:space="preserve">
+    <value>Hiba történt az új dátum létrehozásakor.</value>
+  </data>
+  <data name="ErrorCreatingDocument" xml:space="preserve">
+    <value>Hiba történt a dokumentum létrehozása közben.</value>
+  </data>
+  <data name="ErrorCreatingEntity" xml:space="preserve">
+    <value>Hiba történt az új elem létrehozásakor.</value>
+  </data>
+  <data name="ErrorCreatingFolder" xml:space="preserve">
+    <value>Hiba történt a mappa létrehozása közben.</value>
+  </data>
+  <data name="ErrorCreatingIdentifier" xml:space="preserve">
+    <value>Hiba történt az azonosító létrehozásakor.</value>
+  </data>
+  <data name="ErrorCreatingLink" xml:space="preserve">
+    <value>Hiba történt az új hivatkozás létrehozásakor.</value>
+  </data>
+  <data name="ErrorCreatingPerson" xml:space="preserve">
+    <value>Hiba történt a névjegy létrehozása közben.</value>
+  </data>
+  <data name="ErrorDeletingAttribute" xml:space="preserve">
+    <value>Hiba történt a cím vagy azonosító törlésekor.</value>
+  </data>
+  <data name="ErrorDeletingBlob" xml:space="preserve">
+    <value>Hiba történt a fájl törlésekor.</value>
+  </data>
+  <data name="ErrorDeletingCategory" xml:space="preserve">
+    <value>Hiba történt a kategória törlésekor.</value>
+  </data>
+  <data name="ErrorDeletingDate" xml:space="preserve">
+    <value>Hiba történt a dátum törlésekor.</value>
+  </data>
+  <data name="ErrorDeletingEntity" xml:space="preserve">
+    <value>Hiba történt az elem törlésekor.</value>
+  </data>
+  <data name="ErrorDeletingLink" xml:space="preserve">
+    <value>Hiba történt a hivatkozás törlésekor.</value>
+  </data>
+  <data name="ErrorFindingCompanies" xml:space="preserve">
+    <value>Hiba történt a cégek keresése közben.</value>
+  </data>
+  <data name="ErrorFindingDocuments" xml:space="preserve">
+    <value>Hiba történt a dokumentumok keresése közben.</value>
+  </data>
+  <data name="ErrorFindingFolders" xml:space="preserve">
+    <value>Hiba történt a mappák keresése közben.</value>
+  </data>
+  <data name="ErrorLoadingAttributes" xml:space="preserve">
+    <value>Hiba történt a címek és azonosítók betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingBlobs" xml:space="preserve">
+    <value>Hiba történt az adatfájlok betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingCategories" xml:space="preserve">
+    <value>Hiba történt a kategóriák betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingCompany" xml:space="preserve">
+    <value>Hiba történt a cég betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingDates" xml:space="preserve">
+    <value>Hiba történt a dátumok betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingDocument" xml:space="preserve">
+    <value>Hiba történt a dokumentum betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingFolder" xml:space="preserve">
+    <value>Hiba történt a mappa betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingLinks" xml:space="preserve">
+    <value>Hiba történt a hivatkozások betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingPerson" xml:space="preserve">
+    <value>Hiba történt a névjegy betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingPersons" xml:space="preserve">
+    <value>Hiba történt a névjegyek betöltése közben.</value>
+  </data>
+  <data name="ErrorLoadingSchema" xml:space="preserve">
+    <value>Az adatséma betöltése nem sikerült. A program leáll.</value>
+  </data>
+  <data name="ErrorModifyingAddress" xml:space="preserve">
+    <value>Hiba történt a cím módosítása közben.</value>
+  </data>
+  <data name="ErrorModifyingCategory" xml:space="preserve">
+    <value>Hiba történt a kategória módosításakor.</value>
+  </data>
+  <data name="ErrorModifyingDate" xml:space="preserve">
+    <value>Hiba történt a dátum módosításakor.</value>
+  </data>
+  <data name="ErrorModifyingIdentifier" xml:space="preserve">
+    <value>Hiba történt az azonosító módosításakor.</value>
+  </data>
+  <data name="ErrorModifyingLink" xml:space="preserve">
+    <value>Hiba történt a hivatkozás módosításakor.</value>
+  </data>
+  <data name="ErrorOpeningEntity" xml:space="preserve">
+    <value>Hiba történt az elem feloldásakor.</value>
+  </data>
+  <data name="ErrorSavingBlob" xml:space="preserve">
+    <value>Hiba történt a fájl mentésekor.</value>
+  </data>
+  <data name="ErrorSavingEntity" xml:space="preserve">
+    <value>Hiba történt az elem mentésekor.</value>
+  </data>
+  <data name="ErrorTemplate" xml:space="preserve">
+    <value>Hiba történt a művelet végrehajtása közben. A hiba leírása: {0} A hiba bekerült a hibanaplóba.</value>
+  </data>
+  <data name="ErrorUserLogin" xml:space="preserve">
+    <value>Hiba történt a bejelentkezésnél. A program leáll.</value>
+  </data>
+  <data name="ErrorUserLogoff" xml:space="preserve">
+    <value>Hiba történt a kijelentkezésnél.</value>
+  </data>
+  <data name="InvalidValue" xml:space="preserve">
+    <value>Érvénytelen érték, vagy nem megfelelő formátum.</value>
+  </data>
+  <data name="InvalidVersionDelete" xml:space="preserve">
+    <value>Verzió eltérés! A törlendő elemet valószínűleg egy másik felhasználó (vagy Ön egy másik ablakban) módosította vagy törölte, amióta Ön megnyitotta. Az adatok felülírása a más által elvégzett módosítások elvesztését okozhatja.</value>
+  </data>
+  <data name="InvalidVersionModify" xml:space="preserve">
+    <value>Verzió eltérés! A módosítandó elemet valószínűleg egy másik felhasználó (vagy Ön egy másik ablakban) módosította, amióta Ön megnyitotta. Az adatok felülírása a más által elvégzett módosítások elvesztését okozhatja.</value>
+  </data>
+  <data name="LoadingSchema" xml:space="preserve">
+    <value>Séma betöltése...</value>
+  </data>
+  <data name="Modified" xml:space="preserve">
+    <value>Módosítva</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>Csak olvasható</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Menti a változtatásokat?</value>
+  </data>
+  <data name="SearchResultCount" xml:space="preserve">
+    <value>Találatok száma: {0}</value>
+  </data>
+  <data name="SingleModify" xml:space="preserve">
+    <value>Egyszerre csak egy elem módosítható.</value>
+  </data>
+</root>

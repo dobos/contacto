@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7CBB3AC-46A4-4FB1-96AF-F06E34FF589C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contacto.Lib</RootNamespace>
+    <AssemblyName>ContactoLib</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Address.cs" />
+    <Compile Include="Attributes\Attribute.cs" />
+    <Compile Include="Attributes\Category.cs" />
+    <Compile Include="Attributes\Date.cs" />
+    <Compile Include="Attributes\Link.cs" />
+    <Compile Include="Attributes\Indentifier.cs" />
+    <Compile Include="Attributes\CategoryDescription.cs" />
+    <Compile Include="CheckOutManager.cs" />
+    <Compile Include="CheckOutException.cs" />
+    <Compile Include="Directory.cs" />
+    <Compile Include="Entities\Blob.cs" />
+    <Compile Include="Entities\FolderFactory.cs" />
+    <Compile Include="Entities\PersonFactory.cs" />
+    <Compile Include="Entities\DocumentFactory.cs" />
+    <Compile Include="Entities\Folder.cs" />
+    <Compile Include="Entities\Document.cs" />
+    <Compile Include="Entities\EntityFactory.cs" />
+    <Compile Include="Entities\Person.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="InvalidVersionException.cs" />
+    <Compile Include="Entities\Company.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="DBIOException.cs" />
+    <Compile Include="DBIOMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBIOMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CompanyFactory.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="LogEntry.cs" />
+    <Compile Include="ObjectBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\CategorySearchParameters.cs" />
+    <Compile Include="Search\CompanySearchParameters.cs" />
+    <Compile Include="Search\DocumentSearchParameters.cs" />
+    <Compile Include="Search\PersonSearchParameters.cs" />
+    <Compile Include="Search\SearchParameters.cs" />
+    <Compile Include="Search\SimpleSearchParameters.cs" />
+    <Compile Include="TypeDescription.cs" />
+    <Compile Include="SchemaManager.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DBIOMessages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DBIOMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FFC83C2-4B4B-4082-9224-7EFCB754F3F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contacto.UI</RootNamespace>
+    <AssemblyName>ContactoUI</AssemblyName>
+    <ApplicationIcon>contacto.ico</ApplicationIcon>
+    <StartupObject>Contacto.UI.Program</StartupObject>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>8FA92DF1F288D9A0C187A6E86E9E482929CB9FAE</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ContactoUI_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>D:\Project\Contacto\publish\contacto\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://szerver/contacto/</InstallUrl>
+    <TargetCulture>hu-HU</TargetCulture>
+    <ProductName>Contacto</ProductName>
+    <PublisherName>Contacto</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Attribute.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Attribute.Designer.cs">
+      <DependentUpon>Attribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Category.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeLists\CategoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttributeLists\CategoryList.Designer.cs">
+      <DependentUpon>CategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attributes\CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DropdownPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DropdownPanel.Designer.cs">
+      <DependentUpon>DropdownPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityLists\EntityListBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\EntityListBase.Designer.cs">
+      <DependentUpon>EntityListBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Browse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\Browse.Designer.cs">
+      <DependentUpon>Browse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColumnSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColumnSelector.Designer.cs">
+      <DependentUpon>ColumnSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateLimits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateLimits.Designer.cs">
+      <DependentUpon>DateLimits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duplicates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duplicates.Designer.cs">
+      <DependentUpon>Duplicates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityLists\BlobList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\BlobList.Designer.cs">
+      <DependentUpon>BlobList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\LinkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attributes\LinkForm.Designer.cs">
+      <DependentUpon>LinkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Link.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Link.Designer.cs">
+      <DependentUpon>Link.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\DateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attributes\DateForm.Designer.cs">
+      <DependentUpon>DateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Date.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Date.Designer.cs">
+      <DependentUpon>Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeLists\DateList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttributeLists\DateList.Designer.cs">
+      <DependentUpon>DateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeLists\LinkList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttributeLists\LinkList.Designer.cs">
+      <DependentUpon>LinkList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContextManager.cs" />
+    <Compile Include="Attributes\Address.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Address.Designer.cs">
+      <DependentUpon>Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\AddressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attributes\AddressForm.Designer.cs">
+      <DependentUpon>AddressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeLists\AttributeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttributeLists\AttributeList.Designer.cs">
+      <DependentUpon>AttributeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\IdentifierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attributes\IdentifierForm.Designer.cs">
+      <DependentUpon>IdentifierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Identifier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Identifier.Designer.cs">
+      <DependentUpon>Identifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityLists\CompanyList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\CompanyList.Designer.cs">
+      <DependentUpon>CompanyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityLists\TagList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\TagList.Designer.cs">
+      <DependentUpon>TagList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityLists\EntityList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\EntityList.Designer.cs">
+      <DependentUpon>EntityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Document.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entities\Document.Designer.cs">
+      <DependentUpon>Document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityLists\DocumentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\DocumentList.Designer.cs">
+      <DependentUpon>DocumentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Folder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entities\Folder.Designer.cs">
+      <DependentUpon>Folder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Person.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entities\Person.Designer.cs">
+      <DependentUpon>Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Company.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entities\Company.Designer.cs">
+      <DependentUpon>Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EntityForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\PersonList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\PersonList.Designer.cs">
+      <DependentUpon>PersonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityLists\PropertyList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntityLists\PropertyList.Designer.cs">
+      <DependentUpon>PropertyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\CategoryPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\CategoryPanel.Designer.cs">
+      <DependentUpon>CategoryPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\CompanySearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\CompanySearch.Designer.cs">
+      <DependentUpon>CompanySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\DocumentSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\DocumentSearch.Designer.cs">
+      <DependentUpon>DocumentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\EntitySearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\EntitySearch.Designer.cs">
+      <DependentUpon>EntitySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IconHandler.cs" />
+    <Compile Include="InteropManager.cs" />
+    <Compile Include="Search\ISearchView.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Navigator.cs">
+    </Compile>
+    <Compile Include="NavigatorItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Address.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\AddressForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Attribute.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Attribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeLists\AttributeList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttributeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeLists\CategoryList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\EntityListBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EntityListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\Browse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Browse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColumnSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateLimits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DateLimits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duplicates.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Duplicates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\BlobList.resx">
+      <DependentUpon>BlobList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\LinkForm.resx">
+      <DependentUpon>LinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Link.resx">
+      <DependentUpon>Link.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\DateForm.resx">
+      <DependentUpon>DateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Date.resx">
+      <DependentUpon>Date.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeLists\DateList.resx">
+      <DependentUpon>DateList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeLists\LinkList.resx">
+      <DependentUpon>LinkList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\IdentifierForm.resx">
+      <DependentUpon>IdentifierForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Identifier.resx">
+      <DependentUpon>Identifier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\CompanyList.resx">
+      <DependentUpon>CompanyList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\TagList.resx">
+      <DependentUpon>TagList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\EntityList.resx">
+      <DependentUpon>EntityList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Document.resx">
+      <DependentUpon>Document.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\DocumentList.resx">
+      <DependentUpon>DocumentList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Folder.resx">
+      <DependentUpon>Folder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Person.resx">
+      <DependentUpon>Person.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Company.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\EntityForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EntityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\PersonList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PersonList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\CategoryPanel.resx">
+      <DependentUpon>CategoryPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\CompanySearch.resx">
+      <DependentUpon>CompanySearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\DocumentSearch.resx">
+      <DependentUpon>DocumentSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\EntitySearch.resx">
+      <DependentUpon>EntitySearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\Home.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntityLists\PropertyList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PropertyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\PersonSearch.resx">
+      <DependentUpon>PersonSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\Search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Search\PersonSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\PersonSearch.Designer.cs">
+      <DependentUpon>PersonSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\SearchFormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\SearchFormBase.Designer.cs">
+      <DependentUpon>SearchFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ColumnSettings.cs" />
+    <Compile Include="Settings\FormSettings.cs" />
+    <Compile Include="Settings\ListViewSettings.cs" />
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Settings\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewForm.Designer.cs">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContactoLib\ContactoLib.csproj">
+      <Project>{C7CBB3AC-46A4-4FB1-96AF-F06E34FF589C}</Project>
+      <Name>ContactoLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navi_back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navi_forward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browse16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacto16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\columns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contacto.ico" />
+    <None Include="ContactoUI_TemporaryKey.pfx" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\checkin.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\underline.png" />
+    <None Include="Resources\italic.png" />
+    <None Include="Resources\bold.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\fontcolor.png" />
+    <None Include="Resources\align_right.png" />
+    <None Include="Resources\align_center.png" />
+    <None Include="Resources\align_left.png" />
+    <None Include="Resources\fontsize.png" />
+    <None Include="Resources\home.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

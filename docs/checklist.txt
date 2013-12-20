@@ -1,0 +1,6 @@
+ellenõrizni:
+	- autoselect tab-ra
+	- elsõdleges azonosítók/linkek/stb beíródnak-e
+	- tab sorrend
+	- gomb, jobbmenü, shortcut, duplaklikk, enter, esc, stb.
+	- displayname beíródás

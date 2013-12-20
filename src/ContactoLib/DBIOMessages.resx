@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CheckBlobFilenameDuplicateFailed" xml:space="preserve">
+    <value>Checking blob filename duplication failed.</value>
+  </data>
+  <data name="CheckCompanyDuplicatesFailed" xml:space="preserve">
+    <value>Checking company duplicates failed.</value>
+  </data>
+  <data name="CheckInBlobFailed" xml:space="preserve">
+    <value>Checking in blob failed.</value>
+  </data>
+  <data name="CheckOutBlobFailed" xml:space="preserve">
+    <value>Checking out blob failed.</value>
+  </data>
+  <data name="CheckPersonDuplicatesFailed" xml:space="preserve">
+    <value>Checking person duplicates failed.</value>
+  </data>
+  <data name="CloseEntityFailed" xml:space="preserve">
+    <value>Closing entity failed.</value>
+  </data>
+  <data name="CreateBlobFailed" xml:space="preserve">
+    <value>Creating blob failed.</value>
+  </data>
+  <data name="CreateCompanyFailed" xml:space="preserve">
+    <value>Creating company failed.</value>
+  </data>
+  <data name="CreateDocumentFailed" xml:space="preserve">
+    <value>Creating document failed.</value>
+  </data>
+  <data name="CreateEntityFailed" xml:space="preserve">
+    <value>Creating entity failed.</value>
+  </data>
+  <data name="CreateFolderFailed" xml:space="preserve">
+    <value>Creating folder failed.</value>
+  </data>
+  <data name="CreateLoginFailed" xml:space="preserve">
+    <value>Creating new user login failed.</value>
+  </data>
+  <data name="CreatePersonFailed" xml:space="preserve">
+    <value>Creating person failed.</value>
+  </data>
+  <data name="DeleteEntityFailed" xml:space="preserve">
+    <value>Deleting entity failed.</value>
+  </data>
+  <data name="DeleteLoginFailed" xml:space="preserve">
+    <value>Deleting user login failed.</value>
+  </data>
+  <data name="DuplicateAttribute" xml:space="preserve">
+    <value>Attribute with the specified type already exist.</value>
+  </data>
+  <data name="EntityNotSaved" xml:space="preserve">
+    <value>Entity not saved. Must be saved before adding any attribute.</value>
+  </data>
+  <data name="ErrorLoadingSchema" xml:space="preserve">
+    <value>Error loading schema.</value>
+  </data>
+  <data name="FindCompaniesFailed" xml:space="preserve">
+    <value>Finding companies failed.</value>
+  </data>
+  <data name="FindDocumentsFailed" xml:space="preserve">
+    <value>Findind documents failed.</value>
+  </data>
+  <data name="FindEntitiesFailed" xml:space="preserve">
+    <value>Finding entities failed.</value>
+  </data>
+  <data name="FindFoldersFailed" xml:space="preserve">
+    <value>Finding folders failed.</value>
+  </data>
+  <data name="GetBlobDataFailed" xml:space="preserve">
+    <value>Getting blob data failed.</value>
+  </data>
+  <data name="InvalidVersion" xml:space="preserve">
+    <value>Invalid version. The entity might be modified by other user.</value>
+  </data>
+  <data name="LoadAddressesFailed" xml:space="preserve">
+    <value>Loading addresses failed.</value>
+  </data>
+  <data name="LoadBlobFailed" xml:space="preserve">
+    <value>Loading blob failed.</value>
+  </data>
+  <data name="LoadBlobsFailed" xml:space="preserve">
+    <value>Loading blobs failed.</value>
+  </data>
+  <data name="LoadCategoriesFailed" xml:space="preserve">
+    <value>Loading categories failed.</value>
+  </data>
+  <data name="LoadCategoryDescriptionsFailed" xml:space="preserve">
+    <value>Loading category descriptions failed.</value>
+  </data>
+  <data name="LoadCompanyFailed" xml:space="preserve">
+    <value>Loading company failed.</value>
+  </data>
+  <data name="LoadDatesFailed" xml:space="preserve">
+    <value>Loading dates failed.</value>
+  </data>
+  <data name="LoadDocumentFailed" xml:space="preserve">
+    <value>Loading document failed.</value>
+  </data>
+  <data name="LoadDocumentsFailed" xml:space="preserve">
+    <value>Loading documents failed.</value>
+  </data>
+  <data name="LoadFolderFailed" xml:space="preserve">
+    <value>Loading folder failed.</value>
+  </data>
+  <data name="LoadIdentifiersFailed" xml:space="preserve">
+    <value>Loading identifiers failed.</value>
+  </data>
+  <data name="LoadLinksFailed" xml:space="preserve">
+    <value>Loading links failed.</value>
+  </data>
+  <data name="LoadPersonFailed" xml:space="preserve">
+    <value>Loading person failed.</value>
+  </data>
+  <data name="LoadPersonsFailed" xml:space="preserve">
+    <value>Loading persons failed.</value>
+  </data>
+  <data name="LoadTypeDescriptionsFailed" xml:space="preserve">
+    <value>Loading type descriptions failed.</value>
+  </data>
+  <data name="LoadUsersFailed" xml:space="preserve">
+    <value>Loading users failed.</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Login failed.</value>
+  </data>
+  <data name="LogoffFailed" xml:space="preserve">
+    <value>Logoff failed.</value>
+  </data>
+  <data name="ModifyBlobFailed" xml:space="preserve">
+    <value>Modifying blob failed.</value>
+  </data>
+  <data name="ModifyCompanyFailed" xml:space="preserve">
+    <value>Modifying company failed.</value>
+  </data>
+  <data name="ModifyDocumentFailed" xml:space="preserve">
+    <value>Modifying document failed.</value>
+  </data>
+  <data name="ModifyEntityFailed" xml:space="preserve">
+    <value>Modifying entity failed.</value>
+  </data>
+  <data name="ModifyFolderFailed" xml:space="preserve">
+    <value>Modifying folder failed.</value>
+  </data>
+  <data name="ModifyPersonFailed" xml:space="preserve">
+    <value>Modifying person failed.</value>
+  </data>
+  <data name="NewBlobFailed" xml:space="preserve">
+    <value>Creating new blob failed.</value>
+  </data>
+  <data name="NewDocumentFailed" xml:space="preserve">
+    <value>Creating new document failed.</value>
+  </data>
+  <data name="NewPersonFailed" xml:space="preserve">
+    <value>Creating new person failed.</value>
+  </data>
+  <data name="OpenEntityFailed" xml:space="preserve">
+    <value>Opening closed entity failed.</value>
+  </data>
+  <data name="RecoverEntityFailed" xml:space="preserve">
+    <value>Recovering entity failed.</value>
+  </data>
+  <data name="SaveRequiredAddressesFailed" xml:space="preserve">
+    <value>Saving required addresses failed.</value>
+  </data>
+  <data name="SaveRequiredCategoriesFailed" xml:space="preserve">
+    <value>Savig required categories failed.</value>
+  </data>
+  <data name="SaveRequiredDatesFailed" xml:space="preserve">
+    <value>Saving required dates failed.</value>
+  </data>
+  <data name="SaveRequiredIdentifiersFailed" xml:space="preserve">
+    <value>Saving required indentifiers failed.</value>
+  </data>
+  <data name="SaveRequiredLinksFailed" xml:space="preserve">
+    <value>Saving required links failed.</value>
+  </data>
+  <data name="SetBlobDataFailed" xml:space="preserve">
+    <value>Setting blob data failed.</value>
+  </data>
+  <data name="UpdateBlobDataFailed" xml:space="preserve">
+    <value>Updating blob data failed.</value>
+  </data>
+</root>

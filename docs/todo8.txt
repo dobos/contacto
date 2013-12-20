@@ -1,0 +1,30 @@
+CONTACTO
+
+++ Keresés találatai között lehessen lépkedni
+++ XP-ben nincsen függõleges felirat a füleken
+   menü/toolbar nem mûködik a keresõ listában
+++ keresésnél találatok száma alul
+   keresés szabadszöveges kategóriára
+   
++  cégnél legyen minõsítési kategória
+   szabadszöveges kategória ellenõrzés
+++ link ablakban szûrés cégenként
+
+   mappakód: cégkód-év-mappaszám (cégen belül növekszik)
+
+++ dokumentum sablonok
+   dokumentum szerkesztés után auto checkin (ellenõrizni)
+
+   változások mentése körül gond van
+
+   dokumentumok PDF konverziója
+   dokumentumok küldése e-mailben / PDF-ben
+
++  új ablak rendesen nyílik fel
+
+
+
+Változott:
+	[spFindEntities]
+	spFindEntities_ByEntity
+	besorolás kategóriát (4) legenerálni a szerveren	spGenerateRequiredCategories

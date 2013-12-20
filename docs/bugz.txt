@@ -1,0 +1,15 @@
+menu\uj ablakot nyitok és bezárom, akkor mind a két ablakot bezárja
+nevjegy a help fulben szokott lenni akkor  is ha nincs help...
+uj gomb nem gordul le csak ha a legorditore nyomok
+
+csinaltam egy uj ceget:
+ha módositva van megjelenhetne egy save\cancel gomb jobb alul...
+nem tudok dokumentumot csatolni:
+		error: Object reference not set to aninstance of an object
+
+hivatkozások gombnál új gomb és szétfagyott.... 
+restart....
+
+
+kereso enterre nem keres csak a gombra
+

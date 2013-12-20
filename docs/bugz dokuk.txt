@@ -1,0 +1,13 @@
+++ dokumentumok\hiatkozások\feladóra rányomtam és szétfagyott
+   dokumentumok\fájlok nézetben a részletek vagy nagy ikonok nézetben nem lehet váltani
+++ cég\dátumoknál annyit csinál hogy betesz egy cég dátum nevû bigyot
+++ kategóriáknál nem lehet ujat csinálni
+++ dokumentumok\hivatkozasok szerzore ranyomtam kifagyott... restart
+++ dokumentumok\hivatkozasok cimzett ranyomtam kifagyott... restart
+++ dokumentumok\hivatkozasok ugyintezo ranyomtam kifagyott... restart
+++ dokumentumok\hivatkozasok cimzett ranyomtam kifagyott... restart
+++ dokumentumok\hivatkozasok mappa ranyomtam kifagyott... restart
+
+++ dokumentumok\datumok nincs tipusvalasztas
+++ új mappa alá csináltam dokumentumot
+++ dokumentum alá nem tudtam filet tenni elsõre

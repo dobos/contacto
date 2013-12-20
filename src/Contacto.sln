@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactoLib", "ContactoLib\ContactoLib.csproj", "{C7CBB3AC-46A4-4FB1-96AF-F06E34FF589C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactoUI", "ContactoUI\ContactoUI.csproj", "{9FFC83C2-4B4B-4082-9224-7EFCB754F3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactoAdmin", "ContactoAdmin\ContactoAdmin.csproj", "{4554C4E3-81BE-4EE6-8EF9-3769FA636E48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7CBB3AC-46A4-4FB1-96AF-F06E34FF589C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CBB3AC-46A4-4FB1-96AF-F06E34FF589C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CBB3AC-46A4-4FB1-96AF-F06E34FF589C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CBB3AC-46A4-4FB1-96AF-F06E34FF589C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FFC83C2-4B4B-4082-9224-7EFCB754F3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FFC83C2-4B4B-4082-9224-7EFCB754F3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FFC83C2-4B4B-4082-9224-7EFCB754F3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FFC83C2-4B4B-4082-9224-7EFCB754F3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4554C4E3-81BE-4EE6-8EF9-3769FA636E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4554C4E3-81BE-4EE6-8EF9-3769FA636E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4554C4E3-81BE-4EE6-8EF9-3769FA636E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4554C4E3-81BE-4EE6-8EF9-3769FA636E48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

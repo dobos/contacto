@@ -1,0 +1,9 @@
+   lezárt mappa
+   emlékeztetõk
+   postázandó levelek
+   dátum filterezés
+   áttekintõ
+   statusbar
+   boolean magyarul
+   dokumentum keresõ
+   dokumentum lista további adatok

@@ -1,0 +1,62 @@
+   xp alatt függõleges szöveg a füleken nem látszik
+   dátum és egyéb filterezés
+++ lezárt mappa
+   emlékeztetõk
+   postázandó levelek
+   dátum filterezés
+   áttekintõ
+   statusbar
+++ boolean magyarul
+++ dokumentum keresõ
+++ dokumentum lista további adatok
+
+
+   dokumentum munkaszám probléma
++  mappa ügyintézõnél csak cégek látszanak
++  megrendelõnél meg a nevek látszanak
+++ mappánál belsõ/külsõ ügyintézõ is legyen
+++ dokumentum látszódjon a mappa (munkaszám)
+++ hivatkozásoknál miért adminisztrátor??
+++ loading blobs failed
+
+++ cégtõl meg lehessen nyitni a mappát is
+++ megjegyzés fül
+
+
+   mappakeresõ
+   hivatkozás ablak lista szép
+   sablonok
+++ checkout nem mûködik
+   validation csak mentéskor legyen
+   large font toolbar rossz sorrendben
+
++  listák háttérben frissítése
+   document list refresh-re reagáljon
+
+
+
+spQueryDocuments_ByEntity
+spQueryDocuments_ByEntityAndCategory
+spQueryDocuments_ByEntityAndCompany
+spQueryDocuments_ByEntityAndFolder
+spQueryDocumentsCompanies_ByEntities
+spQueryDocumentsFolders_ByEntities
+spQueryCompanyPersons
+spQueryEntities_ByCategory
+spQueryEntities_ByEntity
+spQueryFolderDocuments
+
+
+	@DateFrom datetime,
+	@DateTo datetime,
+	@ShowHidden bit,
+	@ShowDeleted bit,
+	@ShowClosed bit
+
+
+		(Entities.DateCreated BETWEEN @DateFrom AND @DateTo) AND
+		(@ShowHidden = 1 OR Entities.Hidden = 0) AND
+		(@ShowDeleted = 1 OR Entities.Deleted = 0) AND
+		(@ShowClosed = 1 OR Entities.Closed = 0)
+
+
