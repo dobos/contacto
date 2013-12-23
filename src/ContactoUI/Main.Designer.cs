@@ -177,9 +177,9 @@ namespace Contacto.UI
             // statusChanged
             // 
             this.statusChanged.AutoSize = false;
-            this.statusChanged.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.statusChanged.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.statusChanged.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
             this.statusChanged.Name = "statusChanged";
             this.statusChanged.Size = new System.Drawing.Size(60, 19);
@@ -194,9 +194,9 @@ namespace Contacto.UI
             // 
             // statusUser
             // 
-            this.statusUser.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.statusUser.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.statusUser.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
             this.statusUser.Name = "statusUser";
             this.statusUser.Size = new System.Drawing.Size(33, 19);
@@ -259,9 +259,9 @@ namespace Contacto.UI
             // 
             // DateLimitFrom
             // 
-            this.DateLimitFrom.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.DateLimitFrom.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.DateLimitFrom.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
             this.DateLimitFrom.Name = "DateLimitFrom";
             this.DateLimitFrom.Size = new System.Drawing.Size(122, 19);
@@ -269,9 +269,9 @@ namespace Contacto.UI
             // 
             // DateLimitTo
             // 
-            this.DateLimitTo.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.DateLimitTo.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.DateLimitTo.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
             this.DateLimitTo.Name = "DateLimitTo";
             this.DateLimitTo.Size = new System.Drawing.Size(122, 19);
@@ -420,7 +420,7 @@ namespace Contacto.UI
             this.toolStripNavigation.Location = new System.Drawing.Point(3, 25);
             this.toolStripNavigation.Name = "toolStripNavigation";
             this.toolStripNavigation.ShowItemToolTips = false;
-            this.toolStripNavigation.Size = new System.Drawing.Size(183, 25);
+            this.toolStripNavigation.Size = new System.Drawing.Size(152, 25);
             this.toolStripNavigation.TabIndex = 0;
             this.toolStripNavigation.Text = "toolStrip1";
             this.toolStripNavigation.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip_ItemClicked);
@@ -494,8 +494,8 @@ namespace Contacto.UI
             // 
             // toolStripView
             // 
-            this.toolStripView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.toolStripView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.toolStripView.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStripView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolHome,
@@ -506,7 +506,7 @@ namespace Contacto.UI
             this.toolStripSeparator8});
             this.toolStripView.Location = new System.Drawing.Point(3, 50);
             this.toolStripView.Name = "toolStripView";
-            this.toolStripView.Size = new System.Drawing.Size(435, 25);
+            this.toolStripView.Size = new System.Drawing.Size(466, 25);
             this.toolStripView.TabIndex = 0;
             this.toolStripView.Text = "toolStrip2";
             this.toolStripView.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip_ItemClicked);
@@ -518,6 +518,7 @@ namespace Contacto.UI
             this.toolHome.Name = "toolHome";
             this.toolHome.Size = new System.Drawing.Size(76, 22);
             this.toolHome.Text = "Á&ttekintõ";
+            this.toolHome.Visible = false;
             // 
             // toolSearch
             // 
@@ -534,6 +535,7 @@ namespace Contacto.UI
             this.toolBrowser.Name = "toolBrowser";
             this.toolBrowser.Size = new System.Drawing.Size(78, 22);
             this.toolBrowser.Text = "&Böngészõ";
+            this.toolBrowser.Visible = false;
             // 
             // quickSearch
             // 
@@ -918,9 +920,9 @@ namespace Contacto.UI
             this.MainMenuStrip = this.menu;
             this.Name = "Main";
             this.Text = "Contacto";
-            this.Load += new System.EventHandler(this.Main_Load);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
+            this.Load += new System.EventHandler(this.Main_Load);
             this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
