@@ -12,8 +12,6 @@ namespace Contacto.UI
     {
         private bool readOnly = false;
         private Contacto.Lib.Entity parentEntity = null;
-        //private List<Contacto.Lib.Document> cache = null;
-        //public event EventHandler Changed;
 
         private TreeNode nodeAll;
         private TreeNode nodeTypes;
@@ -159,7 +157,7 @@ namespace Contacto.UI
             using (Contacto.Lib.Context context = ContextManager.CreateContext(this, false))
             {
                 node.Nodes.Clear();
-                foreach (Contacto.Lib.CategoryDescription c in context.SchemaManager.GetCategoryDescriptions(Contacto.Lib.EntityTypes.Document, t.Id))
+                foreach (Contacto.Lib.CategoryDescription c in context.SchemaManager.CategoryDescriptions[Contacto.Lib.EntityTypes.Document][t.Id].Values)
                 {
                     TreeNode nn = new TreeNode();
                     nn.Text = c.Description;
@@ -259,15 +257,7 @@ namespace Contacto.UI
             li.Tag = doc;
             li.ImageKey = "document";
 
-            for (int i = 0; i < listView.Columns.Count; i++)
-            {
-                string value = doc.GetFieldFormatted((string)listView.Columns[i].Tag);
-
-                if (i == 0)
-                    li.Text = value;
-                else
-                    li.SubItems.Add(value);
-            }
+            CreateColumns(li, doc);
 
             return li;
         }

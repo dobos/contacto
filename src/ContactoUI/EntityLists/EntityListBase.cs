@@ -46,6 +46,29 @@ namespace Contacto.UI
             listView.RefreshListAsync(entities);
         }
 
+        protected void CreateColumns(ListViewItem li, Contacto.Lib.Entity entity)
+        {
+        for (int i = 0; i < listView.Columns.Count; i++)
+            {
+                Color backColor, foreColor;
+                string col = (string)listView.Columns[i].Tag;
+                string value = entity.GetFieldFormatted(col, out backColor, out foreColor);
+
+                if (i == 0)
+                {
+                    li.Text = value;
+                }
+                else
+                {
+                    li.SubItems.Add(value);
+                }
+
+                li.UseItemStyleForSubItems = false;
+                li.SubItems[i].BackColor = backColor;
+                li.SubItems[i].ForeColor = foreColor;
+            }
+        }
+
         public Contacto.Lib.Entity GetPrevious(Contacto.Lib.Entity selected)
         {
             bool found = false;

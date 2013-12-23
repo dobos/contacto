@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 
 namespace Contacto.Lib
 {
@@ -382,9 +383,9 @@ namespace Contacto.Lib
             };
         }
 
-        public override string GetFieldFormatted(string field)
+        public override string GetFieldFormatted(string field, out Color backColor, out Color foreColor)
         {
-            string res;
+            string res = base.GetFieldFormatted(field, out backColor, out foreColor);
 
             switch (field)
             {
@@ -398,16 +399,16 @@ namespace Contacto.Lib
                     res = foreignNumber;
                     break;
                 case "Category":
-                    res = this.GetCategory((int)Contacto.Lib.CategoryTypes.Primary).DisplayText;
+                    res = this.GetFieldCategory((int)Contacto.Lib.CategoryTypes.Primary, out backColor, out foreColor);
                     break;
                 case "Date":
                     res = this.GetDate((int)Contacto.Lib.DateTypes.Primary).DisplayText;
                     break;
                 case "Direction":
-                    res = this.GetCategory((int)Contacto.Lib.CategoryTypes.DocumentDirection).DisplayText;
+                    res = this.GetFieldCategory((int)Contacto.Lib.CategoryTypes.DocumentDirection, out backColor, out foreColor);
                     break;
                 case "Brand":
-                    res = this.GetCategory((int)Contacto.Lib.CategoryTypes.Brand).DisplayText;
+                    res = this.GetFieldCategory((int)Contacto.Lib.CategoryTypes.Brand, out backColor, out foreColor);
                     break;
                 case "FromCompany":
                     res = this.GetLink((int)Contacto.Lib.LinkTypes.DocumentFromCompanyLink).DisplayText;
@@ -423,9 +424,6 @@ namespace Contacto.Lib
                     break;
                 case "Folder":
                     res = this.GetLink((int)Contacto.Lib.LinkTypes.DocumentFolderLink).DisplayText;
-                    break;
-                default:
-                    res = base.GetFieldFormatted(field);
                     break;
             }
 

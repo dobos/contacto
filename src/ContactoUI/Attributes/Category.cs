@@ -117,7 +117,7 @@ namespace Contacto.UI
 
 
                 this.value.Items.Clear();
-                foreach (Contacto.Lib.CategoryDescription c in context.SchemaManager.GetCategoryDescriptions(t.EntityType - Contacto.Lib.EntityTypes.Category, t.Id))
+                foreach (Contacto.Lib.CategoryDescription c in context.SchemaManager.CategoryDescriptions[t.EntityType - Contacto.Lib.EntityTypes.Category][t.Id].Values)
                 {
                     this.value.Items.Add(c);
                 }

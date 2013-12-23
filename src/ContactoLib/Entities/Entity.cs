@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 
 namespace Contacto.Lib
 {
@@ -1128,6 +1129,16 @@ namespace Contacto.Lib
             return null;
         }
 
+        protected string GetFieldCategory(int categoryType, out Color backColor, out Color foreColor)
+        {
+            Category c = GetCategory(categoryType);
+            CategoryDescription cd = Context.SchemaManager.CategoryDescriptions[entityType][categoryType][c.Value];
+
+            backColor = cd.BackColor;
+            foreColor = cd.ForeColor;
+            return c.DisplayText;
+        }
+
         #endregion
         #region Document functions
 
@@ -1149,9 +1160,18 @@ namespace Contacto.Lib
             throw new NotImplementedException();
         }
 
-        public virtual string GetFieldFormatted(string field)
+        public string GetFieldFormatted(string field)
+        {
+            Color backColor, foreColor;
+
+            return GetFieldFormatted(field, out backColor, out foreColor);
+        }
+
+        public virtual string GetFieldFormatted(string field, out Color backColor, out Color foreColor)
         {
             string res = string.Empty;
+            backColor = SystemColors.Window;
+            foreColor = SystemColors.WindowText;
 
             switch (field)
             {

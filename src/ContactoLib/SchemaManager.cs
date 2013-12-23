@@ -10,13 +10,18 @@ namespace Contacto.Lib
     {
         #region Member variables
 
-        private List<CategoryDescription> categoryDescriptions;
+        private Dictionary<int, Dictionary<int, Dictionary<int, CategoryDescription>>> categoryDescriptions;
         private SortedDictionary<int, SortedDictionary<int, TypeDescription>> typeDescriptions;
         private List<User> users;
         private bool loaded = false;
 
         #endregion
         #region Properties
+
+        public Dictionary<int, Dictionary<int, Dictionary<int, CategoryDescription>>> CategoryDescriptions
+        {
+            get { return categoryDescriptions; }
+        }
 
         public IEnumerable<User> Users
         {
@@ -186,7 +191,23 @@ namespace Contacto.Lib
                     x.Add(t.Id, t);
                 }
 
-                this.categoryDescriptions = new List<CategoryDescription>(LoadCategoryDescriptions());
+                // Load category descriptions and store them in a hierarch of dictionaries
+
+                this.categoryDescriptions = new Dictionary<int,Dictionary<int,Dictionary<int, CategoryDescription>>>();
+                foreach (CategoryDescription cd in LoadCategoryDescriptions())
+                {
+                    if (!categoryDescriptions.ContainsKey(cd.EntityType))
+                    {
+                        categoryDescriptions.Add(cd.EntityType, new Dictionary<int, Dictionary<int, CategoryDescription>>());
+                    }
+
+                    if (!categoryDescriptions[cd.EntityType].ContainsKey(cd.Type))
+                    {
+                        categoryDescriptions[cd.EntityType].Add(cd.Type, new Dictionary<int, CategoryDescription>());
+                    }
+
+                    categoryDescriptions[cd.EntityType][cd.Type].Add(cd.Id, cd);
+                }
 
                 users = new List<User>(LoadUsers());
 
@@ -261,20 +282,14 @@ namespace Contacto.Lib
 
         public int GetNextCategoryDescriptionId(int entityType, int categoryType)
         {
-            int i = 0;
-            foreach (CategoryDescription c in categoryDescriptions)
-                if (c.EntityType == entityType && c.Type == categoryType)
-                    i++;
-
-            return i + 1;
+            return categoryDescriptions[entityType][categoryType].Count + 1;
         }
 
+        /* TODO: delete and use property instead
         public IEnumerable<CategoryDescription> GetCategoryDescriptions(int entityType, int categoryType)
         {
-            foreach (CategoryDescription c in categoryDescriptions)
-                if (c.EntityType == entityType && c.Type == categoryType)
-                    yield return c;
-        }
+            return categoryDescriptions[entityType][categoryType];
+        }*/
 
         public User GetUser(Guid guid)
         {

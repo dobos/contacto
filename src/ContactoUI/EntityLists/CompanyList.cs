@@ -47,20 +47,7 @@ namespace Contacto.UI
             li.Tag = company;
             li.ImageKey = "company";
 
-            for (int i = 0; i < listView.Columns.Count; i++)
-            {
-                string col = (string)listView.Columns[i].Tag;
-                string value = company.GetFieldFormatted(col);
-
-                if (i == 0)
-                {
-                    li.Text = value;
-                }
-                else
-                {
-                    li.SubItems.Add(value);
-                }
-            }
+            CreateColumns(li, company);
 
             return li;
         }

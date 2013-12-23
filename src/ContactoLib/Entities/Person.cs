@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 
 namespace Contacto.Lib
 {
@@ -384,9 +385,9 @@ namespace Contacto.Lib
             };
         }
 
-        public override string GetFieldFormatted(string field)
+        public override string GetFieldFormatted(string field, out Color backColor, out Color foreColor)
         {
-            string res;
+            string res = base.GetFieldFormatted(field, out backColor, out foreColor);
 
             switch (field)
             {
@@ -415,7 +416,7 @@ namespace Contacto.Lib
                     res = this.GetLink((int)Contacto.Lib.LinkTypes.PersonCompanyLink).DisplayText;
                     break;
                 case "Status":
-                    res = this.GetCategory((int)Contacto.Lib.CategoryTypes.Primary).DisplayText;
+                    res = this.GetFieldCategory((int)Contacto.Lib.CategoryTypes.Primary, out backColor, out foreColor);
                     break;
                 case "Phone":
                     res = this.GetIdentifier((int)Contacto.Lib.IdentifierTypes.PrimaryPhone).DisplayText;
@@ -425,9 +426,6 @@ namespace Contacto.Lib
                     break;
                 case "Email":
                     res = this.GetIdentifier((int)Contacto.Lib.IdentifierTypes.PrimaryEmail).DisplayText;
-                    break;
-                default:
-                    res = base.GetFieldFormatted(field);
                     break;
             }
 

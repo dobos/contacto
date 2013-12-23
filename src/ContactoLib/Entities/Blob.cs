@@ -4,6 +4,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using System.Drawing;
 
 namespace Contacto.Lib
 {
@@ -517,9 +518,9 @@ namespace Contacto.Lib
             return string.Empty;
         }
 
-        public override string GetFieldFormatted(string field)
+        public override string GetFieldFormatted(string field, out Color backColor, out Color foreColor)
         {
-            string res;
+            string res = base.GetFieldFormatted(field, out backColor, out foreColor);
 
             switch (field)
             {
@@ -537,9 +538,6 @@ namespace Contacto.Lib
                         res = "(senki)";
                     else
                         res = Contacto.Lib.Util.UserName(context.SchemaManager.GetUser(checkedOutBy));
-                    break;
-                default:
-                    res = base.GetFieldFormatted(field);
                     break;
             }
 

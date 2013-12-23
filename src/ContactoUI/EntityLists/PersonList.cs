@@ -81,20 +81,7 @@ namespace Contacto.UI
             li.Tag = p;
             li.ImageKey = "card";
 
-            for (int i = 0; i < listView.Columns.Count; i++)
-            {
-                string col = (string)listView.Columns[i].Tag;
-                string value = p.GetFieldFormatted(col);
-
-                if (i == 0)
-                {
-                    li.Text = value;
-                }
-                else
-                {
-                    li.SubItems.Add(value);
-                }
-            }
+            CreateColumns(li, p);
 
             return li;
         }

@@ -102,7 +102,7 @@ namespace Contacto.UI
                 using (Contacto.Lib.Context context = ContextManager.CreateContext(this, false))
                 {
                     value.Items.Clear();
-                    foreach (Contacto.Lib.CategoryDescription cd in context.SchemaManager.GetCategoryDescriptions(entityType, td.Id))
+                    foreach (Contacto.Lib.CategoryDescription cd in context.SchemaManager.CategoryDescriptions[entityType][td.Id].Values)
                     {
                         value.Items.Add(cd);
                     }

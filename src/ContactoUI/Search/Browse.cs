@@ -82,7 +82,7 @@ namespace Contacto.UI
             using (Contacto.Lib.Context context = ContextManager.CreateContext(this, false))
             {
                 node.Nodes.Clear();
-                foreach (Contacto.Lib.CategoryDescription c in context.SchemaManager.GetCategoryDescriptions(t.EntityType - Contacto.Lib.EntityTypes.Category, t.Id))
+                foreach (Contacto.Lib.CategoryDescription c in context.SchemaManager.CategoryDescriptions[t.EntityType - Contacto.Lib.EntityTypes.Category][t.Id].Values)
                 {
                     TreeNode nn = new TreeNode();
                     nn.Text = c.Description;

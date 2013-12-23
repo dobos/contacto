@@ -45,15 +45,8 @@ namespace Contacto.UI
                     li.ImageKey = "reminder"; break;
             }
 
-            for (int i = 0; i < listView.Columns.Count; i++)
-            {
-                string value = entity.GetFieldFormatted((string)listView.Columns[i].Tag);
+            CreateColumns(li, entity);
 
-                if (i == 0)
-                    li.Text = value;
-                else
-                    li.SubItems.Add(value);
-            }
             return li;
         }
 

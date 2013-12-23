@@ -48,7 +48,7 @@ namespace Contacto.Admin
 
             using (Contacto.Lib.Context context = ContextManager.CreateContext(false))
             {
-                foreach (Contacto.Lib.CategoryDescription d in context.SchemaManager.GetCategoryDescriptions(t.EntityType - 3, t.Id))
+                foreach (Contacto.Lib.CategoryDescription d in context.SchemaManager.CategoryDescriptions[t.EntityType - 3][t.Id].Values)
                 {
                     ListViewItem ni = new ListViewItem();
                     ni.Text = d.Id.ToString();
