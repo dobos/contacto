@@ -7,11 +7,11 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Contacto")]
-[assembly: AssemblyDescription("Contacto Main Executable")]
+[assembly: AssemblyDescription("Contacto Kapcsolatkezelő Program")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dobos László")]
 [assembly: AssemblyProduct("Contacto")]
-[assembly: AssemblyCopyright("Copyright © Dobos László 2007")]
+[assembly: AssemblyCopyright("Copyright © Dobos László 2007-2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

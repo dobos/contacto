@@ -144,7 +144,7 @@ namespace Contacto.UI
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "(c) 2007-2009 Dobos László";
+            this.label3.Text = "(c) 2007-2013 Dobos László";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // closeTimer
