@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 
 namespace Contacto.Lib
 {
@@ -14,6 +15,8 @@ namespace Contacto.Lib
         private int entityType;
         private int type;
         private string description;
+        private Color backColor;
+        private Color foreColor;
 
         #endregion
         #region Properties
@@ -40,6 +43,18 @@ namespace Contacto.Lib
         {
             get { return description; }
             set { description = value; }
+        }
+
+        public Color BackColor
+        {
+            get { return backColor; }
+            set { backColor = value; }
+        }
+
+        public Color ForeColor
+        {
+            get { return foreColor; }
+            set { foreColor = value; }
         }
 
         #endregion
@@ -90,6 +105,8 @@ namespace Contacto.Lib
             this.entityType = dr.GetInt32(++o);
             this.type = dr.GetInt32(++o);
             this.description = dr.GetString(++o);
+            this.backColor = Color.FromArgb((int)((uint)dr.GetInt32(++o) | 0xFF000000));
+            this.foreColor = Color.FromArgb((int)((uint)dr.GetInt32(++o) | 0xFF000000));
         }
 
         #endregion
@@ -146,6 +163,8 @@ namespace Contacto.Lib
             cmd.Parameters.Add("@EntityType", SqlDbType.Int).Value = entityType;
             cmd.Parameters.Add("@Type", SqlDbType.Int).Value = type;
             cmd.Parameters.Add("@Description", SqlDbType.NVarChar, 50).Value = description;
+            cmd.Parameters.Add("@BackColor", SqlDbType.Int).Value = backColor.ToArgb() & 0xFFFFFF;
+            cmd.Parameters.Add("@ForeColor", SqlDbType.Int).Value = foreColor.ToArgb() & 0xFFFFFF;
         }
 
         #endregion

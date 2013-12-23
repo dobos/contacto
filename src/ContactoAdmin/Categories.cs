@@ -56,6 +56,9 @@ namespace Contacto.Admin
 
                     ni.Tag = d;
 
+                    ni.BackColor = d.BackColor;
+                    ni.ForeColor = d.ForeColor;
+
                     optionsList.Items.Add(ni);
                 }
             }
@@ -131,6 +134,11 @@ namespace Contacto.Admin
             {
                 ModifyCategoryDescription((Contacto.Lib.CategoryDescription)optionsList.SelectedItems[0].Tag);
             }
+        }
+
+        private void optionsList_DoubleClick(object sender, EventArgs e)
+        {
+            ModifyCategoryDescription((Contacto.Lib.CategoryDescription)optionsList.SelectedItems[0].Tag);
         }
     }
 }

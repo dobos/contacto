@@ -31,12 +31,12 @@ namespace Contacto.Admin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Categories));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listView = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.optionsList = new System.Windows.Forms.ListView();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.toolNew = new System.Windows.Forms.ToolStripButton();
             this.toolModify = new System.Windows.Forms.ToolStripButton();
@@ -110,6 +110,7 @@ namespace Contacto.Admin
             this.optionsList.TabIndex = 0;
             this.optionsList.UseCompatibleStateImageBehavior = false;
             this.optionsList.View = System.Windows.Forms.View.Details;
+            this.optionsList.DoubleClick += new System.EventHandler(this.optionsList_DoubleClick);
             // 
             // columnHeader4
             // 
