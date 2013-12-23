@@ -63,11 +63,12 @@ namespace Contacto.UI
             // 
             // add
             // 
+            this.add.Font = new System.Drawing.Font("Marlett", 12F);
             this.add.Location = new System.Drawing.Point(222, 30);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(23, 23);
+            this.add.Size = new System.Drawing.Size(32, 23);
             this.add.TabIndex = 2;
-            this.add.Text = ">";
+            this.add.Text = "3";
             this.add.UseVisualStyleBackColor = true;
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
@@ -75,7 +76,7 @@ namespace Contacto.UI
             // 
             this.listSelected.DisplayMember = "Text";
             this.listSelected.FormattingEnabled = true;
-            this.listSelected.Location = new System.Drawing.Point(252, 30);
+            this.listSelected.Location = new System.Drawing.Point(260, 30);
             this.listSelected.Name = "listSelected";
             this.listSelected.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listSelected.Size = new System.Drawing.Size(200, 290);
@@ -86,7 +87,7 @@ namespace Contacto.UI
             // ok
             // 
             this.ok.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ok.Location = new System.Drawing.Point(296, 326);
+            this.ok.Location = new System.Drawing.Point(306, 326);
             this.ok.Name = "ok";
             this.ok.Size = new System.Drawing.Size(75, 23);
             this.ok.TabIndex = 5;
@@ -96,7 +97,7 @@ namespace Contacto.UI
             // cancel
             // 
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancel.Location = new System.Drawing.Point(377, 326);
+            this.cancel.Location = new System.Drawing.Point(387, 326);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(75, 23);
             this.cancel.TabIndex = 4;
@@ -105,31 +106,34 @@ namespace Contacto.UI
             // 
             // remove
             // 
+            this.remove.Font = new System.Drawing.Font("Marlett", 12F);
             this.remove.Location = new System.Drawing.Point(222, 59);
             this.remove.Name = "remove";
-            this.remove.Size = new System.Drawing.Size(23, 23);
+            this.remove.Size = new System.Drawing.Size(32, 23);
             this.remove.TabIndex = 6;
-            this.remove.Text = "<";
+            this.remove.Text = "4";
             this.remove.UseVisualStyleBackColor = true;
             this.remove.Click += new System.EventHandler(this.remove_Click);
             // 
             // up
             // 
+            this.up.Font = new System.Drawing.Font("Marlett", 12F);
             this.up.Location = new System.Drawing.Point(222, 146);
             this.up.Name = "up";
-            this.up.Size = new System.Drawing.Size(23, 23);
+            this.up.Size = new System.Drawing.Size(32, 23);
             this.up.TabIndex = 7;
-            this.up.Text = "F";
+            this.up.Text = "5";
             this.up.UseVisualStyleBackColor = true;
             this.up.Click += new System.EventHandler(this.up_Click);
             // 
             // down
             // 
+            this.down.Font = new System.Drawing.Font("Marlett", 12F);
             this.down.Location = new System.Drawing.Point(222, 175);
             this.down.Name = "down";
-            this.down.Size = new System.Drawing.Size(23, 23);
+            this.down.Size = new System.Drawing.Size(32, 23);
             this.down.TabIndex = 8;
-            this.down.Text = "L";
+            this.down.Text = "6";
             this.down.UseVisualStyleBackColor = true;
             this.down.Click += new System.EventHandler(this.down_Click);
             // 
@@ -150,7 +154,7 @@ namespace Contacto.UI
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CancelButton = this.cancel;
-            this.ClientSize = new System.Drawing.Size(468, 356);
+            this.ClientSize = new System.Drawing.Size(474, 356);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.down);
             this.Controls.Add(this.up);
@@ -167,6 +171,7 @@ namespace Contacto.UI
             this.Name = "ColumnSelector";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Oszlopok kiválasztása";
             this.ResumeLayout(false);
             this.PerformLayout();

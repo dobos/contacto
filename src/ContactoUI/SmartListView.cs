@@ -122,7 +122,6 @@ namespace Contacto.UI
         {
             using (ColumnSelector f = new ColumnSelector())
             {
-
                 foreach (ColumnHeader ch in headers)
                 {
                     if (!Columns.Contains(ch))
@@ -133,7 +132,7 @@ namespace Contacto.UI
                     f.listSelected.Items.Add(ch);
                 }
 
-                if (f.ShowDialog() == DialogResult.OK)
+                if (f.ShowDialog(this.FindForm()) == DialogResult.OK)
                 {
                     base.Items.Clear();
                     Columns.Clear();
