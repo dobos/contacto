@@ -1132,10 +1132,20 @@ namespace Contacto.Lib
         protected string GetFieldCategory(int categoryType, out Color backColor, out Color foreColor)
         {
             Category c = GetCategory(categoryType);
-            CategoryDescription cd = Context.SchemaManager.CategoryDescriptions[entityType][categoryType][c.Value];
 
-            backColor = cd.BackColor;
-            foreColor = cd.ForeColor;
+            if (Context.SchemaManager.CategoryDescriptions[entityType][categoryType].ContainsKey(c.Value))
+            {
+                CategoryDescription cd = Context.SchemaManager.CategoryDescriptions[entityType][categoryType][c.Value];
+
+                backColor = cd.BackColor;
+                foreColor = cd.ForeColor;
+            }
+            else
+            {
+                backColor = SystemColors.Window;
+                foreColor = SystemColors.WindowText;
+            }
+
             return c.DisplayText;
         }
 
